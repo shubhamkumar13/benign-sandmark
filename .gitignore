@@ -1,0 +1,7 @@
+_opam
+_build
+_results
+.merlin
+runs_dune.inc
+*~
+*.swp

@@ -1,0 +1,6 @@
+(executable
+ (name mandelbrot)
+ (modules mandelbrot)
+ (libraries domainslib)
+
+(alias (name mandelbrot) (deps mnbt_set_rmt_par.exe))

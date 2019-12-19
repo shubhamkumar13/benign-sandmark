@@ -1,0 +1,5 @@
+(executable
+ (name test_decompress)
+  (libraries checkseum.ocaml decompress))
+
+(alias (name buildbench) (deps test_decompress.exe))

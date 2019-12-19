@@ -1,0 +1,35 @@
+{
+  "wrappers": [
+    {
+      "name": "orun",
+      "command": "orun -o %{output} -- %{command}"
+    },
+    {
+      "name": "perfstat",
+      "command": "perf stat -o %{output} -- %{command}"
+    }
+  ],
+  "benchmarks": [
+    {
+      "executable": "benchmarks/mandelbrot/mnbt_set_rmt_par.exe",
+      "name": "test_mnbt_set_rmt_par",
+      "runs": [
+        {
+          "params": "16000 2"
+        },
+        {
+          "params": "16000 4"
+        },
+        {
+          "params": "16000 8"
+        },
+        {
+          "params": "16000 16"
+        },
+        {
+          "params": "16000 32"
+        }
+      ]
+    }
+   ]
+}
